@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:local_auth/local_auth.dart';
+import 'package:solar/utils/colorUtil.dart';
 import '/helper/language.dart';
 import '/utils/utils.dart';
 
@@ -15,6 +16,7 @@ import '../model/parameterMode.dart';
 import '../notifier/configuration.dart';
 import '../utils/constants.dart';
 import '../utils/sizeLocal.dart';
+import 'loginpage/login.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -27,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
   final LocalAuthentication auth = LocalAuthentication();
 
   navigate(){
-    //Get.off(SlideSwipe());
+    Get.off(loginPage());
   }
 
   @override
@@ -135,8 +137,8 @@ class _SplashScreenState extends State<SplashScreen> {
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
             alignment: Alignment.center,
-            color: Theme.of(context).primaryColor,
-            child: Image.asset("assets/splash.png"),
+            color: ColorUtil.themeWhite,
+            child: Image.asset("assets/logo.png"),
           ),
         ],
       ),

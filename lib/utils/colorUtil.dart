@@ -8,7 +8,7 @@ class ColorUtil{
   static Color themeWhite=const Color(0xffffffff);
   static Color themeBlack=const Color(0xff2C2C2D);
   static Color secondary=const Color(0xff476039);
-  static Color primary=const Color(0xff5A8418);
+  static Color primary=const Color(0xff46AA51);
   static Color secondaryOpa01=const Color(0xff019342).withOpacity(0.1);
   static Color secondaryOpa02=const Color(0xff019342).withOpacity(0.2);
   static Color secondaryOpa03=const Color(0xff019342).withOpacity(0.3);
